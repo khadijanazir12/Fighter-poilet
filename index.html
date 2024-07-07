@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighter Pilot Game</title>
+    <style>
+        body{
+            background: aquamarine;
+        }
+        h1{
+            flex:1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        canvas {
+            background-color: black;
+            display: block;
+            margin: auto;
+        }
+        #gameInstructions {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+}
+
+#gameInstructions h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#gameInstructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#gameInstructions li {
+    margin-bottom: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Fighter Poilet Game</h1>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <audio id="shootSound" src="shoot.mp3" preload="auto"></audio>
+    <audio id="hitSound" src="hit.mp3" preload="auto"></audio>
+    <audio id="powerUpSound" src="powerup.mp3" preload="auto"></audio>
+    <audio id="explosionSound" src="explosion.mp3" preload="auto"></audio>
+    <audio id="backgroundMusic" src="background.mp3" preload="auto" loop></audio>
+
+    <!--<div id="gameInstructions">
+        <h2>Instructions</h2>
+        <ul>
+            <li>Use Arrow keys to move the airplane.</li>
+            <li>Press Spacebar to shoot bullets.</li>
+            <li>Avoid enemy airplanes and collect power-ups.</li>
+            <li>Your health decreases when hit by enemies.</li>
+            <li>Score points by destroying enemies.</li>
+            <li>Survive as long as possible to achieve a high score!</li>
+        </ul>
+    </div>-->
+    
+    <script src="game.js"></script>
+</body>
+</html>
